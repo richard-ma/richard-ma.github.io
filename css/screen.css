@@ -198,13 +198,13 @@ ul.posts {
 
 #document_info {
     background-color: #CCF;
-    padding-left: 15px;
+    padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
 #payment {
     background-color: #CCF;
-    padding-left: 15px;
+    padding: 15px;
     border-radius: 5px;
 }
