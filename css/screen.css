@@ -196,14 +196,8 @@ ul.posts {
     margin-bottom: 1em;
   }
 
-/*****************************************************************************/
-/*
-/* Document info
-/*
-/*****************************************************************************/
-
 #document_info {
-    background-color: #CCC;
-    padding-left: 25px;
+    background-color: #CCF;
+    padding-left: 15px;
     border-radius: 5px;
 }
