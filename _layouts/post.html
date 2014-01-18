@@ -7,7 +7,7 @@ layout: default
 
     {% include document_info.html page_url=page.url page_date=page.date %}
 
-    {{ page.content | markdownify }}
+    {{ page.excerpt | markdownify }}
 
     {% include payment.html %}
 </div>
