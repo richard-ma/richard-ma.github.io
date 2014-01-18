@@ -1,5 +1,6 @@
 markdown: rdiscount
 pygments: true
+permalink: date
 
 name: 呓语 Beta 2.0
 description: 听、想、看、触、悟
