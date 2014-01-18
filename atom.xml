@@ -22,7 +22,6 @@ layout: nil
    <id>http://richardma.info{{ post.id }}</id>
    <content type="html">
        {{ post.content | xml_escape }}
-       {% include payment.html %}
    </content>
  </entry>
  {% endfor %}
