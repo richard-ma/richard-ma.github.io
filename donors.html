@@ -4,11 +4,7 @@ title: 捐款人名单
 ---
 
 <div id="home">
-    <table>
         {% for donor in site.data.donors %}
-            {% circle '<tr>', '', '', '', ''}
-                <td>{{ donor.name }}</td>
-            {% circle '</tr>', '', '', '', ''}
+                {{ donor.name }}
         {% endfor %}
-    </table>
 </div>
