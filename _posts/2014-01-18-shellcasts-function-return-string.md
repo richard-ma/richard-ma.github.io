@@ -8,4 +8,4 @@ tags: bash function return
 
 <embed src="http://player.youku.com/player.php/sid/XNjYyOTI5MDQ0/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 
-[代码下载](https://gitcafe.com/richard-ma/shellcasts/tree/master/00001-function-return-string)
+<a href="https://gitcafe.com/richard-ma/shellcasts/tree/master/00001-function-return-string" target="_blank">代码下载</a>
