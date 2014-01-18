@@ -2,11 +2,9 @@
 layout: default
 ---
 <div id="post">
-{{ content }}
-{{ date }}
+{{ post.content }}
+{{ post.date }}
 </div>
-
-{% include document_info.html post_date="{{ date }}" %}
 
 <div id="related">
   <h2>相关文章</h2>
