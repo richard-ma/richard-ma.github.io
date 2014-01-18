@@ -3,8 +3,9 @@ layout: default
 ---
 <div id="post">
 {{ content }}
-{{ page.date }}
 </div>
+
+{% include document_info.html page_url=page.url page_date=page.date %}
 
 <div id="related">
   <h2>相关文章</h2>
