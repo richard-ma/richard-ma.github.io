@@ -1,7 +1,7 @@
 ---
 layout: post
 category: shellcasts
-id: 1
+sid: 1
 title: bash函数返回字符串
 tags: bash function return
 ---
