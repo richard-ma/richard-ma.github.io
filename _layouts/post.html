@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
+{% include document_info.html page_url=page.url page_date=page.date %}
+
 <div id="post">
 {{ content }}
 </div>
 
-{% include document_info.html page_url=page.url page_date=page.date %}
+{% include payment.html %}
 
 <div id="related">
   <h2>相关文章</h2>
