@@ -21,9 +21,9 @@ layout: nil
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://richardma.info{{ post.id }}</id>
    <content type="html">
-       {% include document_info.html page_url=post.url page_date=post.date | xml_escape %}
+       {% include document_info.html page_url=post.url page_date=post.date %}
        {{ post.content | xml_escape }}
-       {% include payment.html | xml_escape %}
+       {% include payment.html %}
    </content>
  </entry>
  {% endfor %}
