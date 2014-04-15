@@ -17,13 +17,13 @@ tags: http Apache 403
 
 如果不知道默认首页文件名，可以查阅Apache配置文件中的DirectoryIndex项目设置。
 
-<code>DirectoryIndex index.html index.cgi index.pl index.php index.xhtml</code>
+    DirectoryIndex index.html index.cgi index.pl index.php index.xhtml
 
 #  检查CGI文件是否有可执行权限
 
 如果用到CGI文件，其应有对应的可执行权限。如果没有可执行权限，可以使用以下命令添加。
 
-<code>$ chmod +x file.cgi</code>
+    $ chmod +x file.cgi
 
 #  是否有.htaccess使用权限
 
@@ -46,12 +46,12 @@ Linux文件系统权限中，目录必须具有可执行权限内容才能被访
 
 可以使用以下命令给目录添加可执行权限
 
-<code>chmod +x /home/httpd/theos.in/</code>
+    chmod +x /home/httpd/theos.in/
 
 #  察看Apache错误日志寻找原因
 
 最后的方法就是察看Apache错误日志来寻找403的原因，日志文件路径如下：
 
-<code>/var/log/apache2/error.log #这里是默认错误日志的路径，不过不同的发行版可能路径稍有区别</code>
+    /var/log/apache2/error.log #这里是默认错误日志的路径，不过不同的发行版可能路径稍有区别
 
 <a href="http://www.cyberciti.biz/faq/apache-403-forbidden-error-and-solution/" target="_blank">英文原文</a>
