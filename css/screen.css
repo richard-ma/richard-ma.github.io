@@ -24,7 +24,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
-  border-bottom: 1px dotted #eef;
+  border-bottom: 2px dotted #eef;
 }
 
 h1 {
