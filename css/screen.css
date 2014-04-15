@@ -24,7 +24,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
-  border-bottom: 2px dashed #eef;
 }
 
 h1 {
@@ -155,6 +154,10 @@ ul.posts {
 }
 
   /* standard */
+
+  #post h1, h2, h3, h4, h5, h6 {
+    border-bottom: 2px dashed #eef;
+  }
 
   #post pre {
     border: 1px solid #ddd;
