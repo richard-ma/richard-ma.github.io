@@ -33,19 +33,12 @@ tags: http Apache 403
 
 请确认Apache配置文件中的目录权限如下所示，当然你的目录可能有特殊配置，不过要明确是否对于用户和访问。
 
-<code>
-<Directory "/home/domain/www">
-
-    Options +Indexes FollowSymLinks +ExecCGI
-
-    AllowOverride AuthConfig FileInfo
-
-    Order allow,deny
-
-    Allow from all # 我的问题就是这里，原来写成Deny for all了，就出现了403错误
-
-</Directory>
-</code>
+    <Directory "/home/domain/www">
+        Options +Indexes FollowSymLinks +ExecCGI
+        AllowOverride AuthConfig FileInfo
+        Order allow,deny
+        Allow from all # 我的问题就是这里，原来写成Deny for all了，就出现了403错误
+    </Directory>
 
 #  确保目录都有文件系统可执行权限
 
