@@ -17,13 +17,14 @@ html, body {
 
 body {
   background-color: white;
-  font: 18px helvetica, arial, clean, sans-serif;
-  *font-size: small;
+  font: 13.34px helvetica, arial, clean, sans-serif;
+  *font-size: large;
   text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
+  border-bottom: 2px dashed #eef;
 }
 
 h1 {
@@ -154,11 +155,6 @@ ul.posts {
 }
 
   /* standard */
-
-  #post h1, h2, h3, h4, h5, h6 {
-    border-bottom: 2px dashed #eef;
-  }
-
   #post pre {
     border: 1px solid #ddd;
     background-color: #eef;
@@ -203,13 +199,13 @@ ul.posts {
 
 #document_info {
     background-color: #CCF;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
     border-radius: 5px;
 }
 
 #payment {
     background-color: #CCF;
-    padding: 10px;
+    padding: 1em;
     border-radius: 5px;
 }
