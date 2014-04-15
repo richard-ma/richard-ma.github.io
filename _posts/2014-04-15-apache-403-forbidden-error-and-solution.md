@@ -17,13 +17,13 @@ tags: http Apache 403
 
 如果不知道默认首页文件名，可以查阅Apache配置文件中的DirectoryIndex项目设置。
 
-> DirectoryIndex index.html index.cgi index.pl index.php index.xhtml
+<code>DirectoryIndex index.html index.cgi index.pl index.php index.xhtml</code>
 
 #  检查CGI文件是否有可执行权限
 
 如果用到CGI文件，其应有对应的可执行权限。如果没有可执行权限，可以使用以下命令添加。
 
-> $ chmod +x file.cgi
+<code>$ chmod +x file.cgi</code>
 
 #  是否有.htaccess使用权限
 
@@ -33,17 +33,19 @@ tags: http Apache 403
 
 请确认Apache配置文件中的目录权限如下所示，当然你的目录可能有特殊配置，不过要明确是否对于用户和访问。
 
-> <Directory "/home/domain/www">
-> 
->     Options +Indexes FollowSymLinks +ExecCGI
-> 
->     AllowOverride AuthConfig FileInfo
-> 
->     Order allow,deny
-> 
->     Allow from all # 我的问题就是这里，原来写成Deny for all了，就出现了403错误
-> 
-> </Directory>
+<code>
+<Directory "/home/domain/www">
+
+    Options +Indexes FollowSymLinks +ExecCGI
+
+    AllowOverride AuthConfig FileInfo
+
+    Order allow,deny
+
+    Allow from all # 我的问题就是这里，原来写成Deny for all了，就出现了403错误
+
+</Directory>
+</code>
 
 #  确保目录都有文件系统可执行权限
 
@@ -51,12 +53,12 @@ Linux文件系统权限中，目录必须具有可执行权限内容才能被访
 
 可以使用以下命令给目录添加可执行权限
 
-> chmod +x /home/httpd/theos.in/
+<code>chmod +x /home/httpd/theos.in/</code>
 
 #  察看Apache错误日志寻找原因
 
 最后的方法就是察看Apache错误日志来寻找403的原因，日志文件路径如下：
 
-> /var/log/apache2/error.log #这里是默认错误日志的路径，不过不同的发行版可能路径稍有区别
+<code>/var/log/apache2/error.log #这里是默认错误日志的路径，不过不同的发行版可能路径稍有区别</code>
 
 <a href="http://www.cyberciti.biz/faq/apache-403-forbidden-error-and-solution/" target="_blank">英文原文</a>
