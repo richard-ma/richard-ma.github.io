@@ -7,7 +7,7 @@ tags: cs-cart
 
 序：本文使用的cs-cart版本为4.1.2
 
-= 入口文件 =
+# 入口文件
 
 cs-cart是一个多入口的系统，目前为止有index, admin和api三个入口，对应如下请求：
 
@@ -19,7 +19,7 @@ cs-cart是一个多入口的系统，目前为止有index, admin和api三个入�
 
 注：API未来可能有改动，这里简单介绍。
 
-= 处理流程 =
+# 处理流程
 
 当一个request到来的时候，会经历如下处理流程：
 
@@ -29,7 +29,7 @@ cs-cart的主要初始化部分在init.php中完成，例如各读取配置文�
 
 在init.php中的fn_dispatch()函数中分发到controller中继续处理。
 
-= 配置文件 =
+# 配置文件
 
 配置文件有两个：
 
@@ -40,7 +40,7 @@ init.php加载配置时只加载config.php，而config.local.php是被config.php
 
 init.php <-- config.php <-- config.local.php
 
-= 核心模块 =
+# 核心模块
 
 核心模块被单独写成了函数库，存放在app/functions中。
 
