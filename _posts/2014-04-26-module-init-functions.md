@@ -31,6 +31,7 @@ fn_init_user                    | *
 fn_init_templater               | *
 
 注：
+
 * *表示没有限制条件，默认执行该模块初始化
 * fn_allowed_for 查看当前的许可是否允许，比如是free还是full授权
 
