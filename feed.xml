@@ -12,11 +12,11 @@ layout: none
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
                 <description>
-                    {% include document_info.html page_url=post.url page_date=post.date %}
+                    {% include document_info.html page_url=post.url page_date=post.date | xml_escape %}
 
                     {{ post.content | xml_escape }}
 
-                    {% include payment.html %}
+                    {% include payment.html | xml_escape %}
                 </description>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 				<link>{{ site.url }}/{{ post.url }}</link>
