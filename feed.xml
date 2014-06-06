@@ -12,7 +12,10 @@ layout: none
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
                 <description>
-                    {{ site.url | xml_escape }}/{{ post.url | xml_escape }}
+                    <h1>原文链接</h1>
+                    <a href="{{ site.url | xml_escape }}/{{ post.url | xml_escape }}" target="_self">
+                        {{ site.url | xml_escape }}/{{ post.url | xml_escape }}
+                    </a>
 
                     {{ post.content | xml_escape }}
                 </description>
