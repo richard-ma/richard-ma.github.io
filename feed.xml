@@ -13,6 +13,8 @@ layout: none
 				<title>{{ post.title | xml_escape }}</title>
                 <description>
                     {{ post.content | xml_escape }}
+
+                    <div><a href="{{ site.url }}{{ post.url }}" target="_blank">阅读原文</a></div>
                 </description>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
