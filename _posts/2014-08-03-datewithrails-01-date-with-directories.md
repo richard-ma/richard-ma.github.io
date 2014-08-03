@@ -1,7 +1,6 @@
 ---
 layout: post
 category: rails
-sid: 1
 title: [Date with Rails] 目录的约定
 tags: ruby rails
 ---
