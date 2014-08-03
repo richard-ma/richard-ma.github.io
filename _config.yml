@@ -1,5 +1,5 @@
 markdown: rdiscount
-pygments: true
+hightlighter: pygments
 permalink: date
 
 name: 呓语 Beta 2.0

@@ -1,7 +1,7 @@
 ---
 layout: post
 category: rails
-title: [Date with Rails] 目录的约定
+title: "[Date with Rails] 目录的约定"
 tags: ruby rails
 ---
 
