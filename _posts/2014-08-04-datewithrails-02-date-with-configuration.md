@@ -2,7 +2,7 @@
 layout: post
 category: rails
 sid: 2
-title: [Date with Rails] 配置的约定
+title: "[Date with Rails] 配置的约定"
 tags: ruby rails
 ---
 
