@@ -1,7 +1,7 @@
 ---
 layout: post
 category: rails
-title: "[Date with Rails]前言"
+title: "[Date with Rails] 前言"
 tags: ruby rails
 ---
 
