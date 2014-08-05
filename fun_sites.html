@@ -1,0 +1,10 @@
+---
+layout: default
+title: 有趣的小站
+---
+
+<div id="home">
+    {% for site in site.data.sites %}
+        {{ site.name }} - {{ site.url }}
+    {% endfor %}
+</div>
