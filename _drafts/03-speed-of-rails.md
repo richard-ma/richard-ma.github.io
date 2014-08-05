@@ -2,7 +2,7 @@
 layout: post
 category: rails
 sid: 3
-title: [Date with Rails] Rails速度
+title: "[Date with Rails] Rails速度"
 tags: ruby rails
 ---
 

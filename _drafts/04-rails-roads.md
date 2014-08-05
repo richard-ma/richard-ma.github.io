@@ -2,7 +2,7 @@
 layout: post
 category: rails
 sid: 4
-title: [Date with Rails] Rails之路
+title: "[Date with Rails] Rails之路"
 tags: ruby rails
 ---
 
