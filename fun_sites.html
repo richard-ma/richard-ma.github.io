@@ -5,6 +5,6 @@ title: 有趣的小站
 
 <div id="home">
     {% for site in site.data.sites %}
-        {{ site.name }} - {{ site.url }}
+        {{ site.name }} - <a href="{{ site.url }}">{{ site.url }}</a><br />
     {% endfor %}
 </div>
