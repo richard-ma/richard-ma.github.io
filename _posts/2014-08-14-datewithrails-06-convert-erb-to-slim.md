@@ -66,4 +66,4 @@ tags: ruby rails
 
 # 原文链接（英文）
 
-[http://www.22ideastreet.com/blog/2011/10/19/converting-erb-to-slim/]
+[http://www.22ideastreet.com/blog/2011/10/19/converting-erb-to-slim/](http://www.22ideastreet.com/blog/2011/10/19/converting-erb-to-slim/)
