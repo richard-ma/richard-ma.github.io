@@ -60,7 +60,7 @@ ruby是动态语言，对于类的操作这部分我觉得可能是参考了lisp
 
 除了pluralize方法，rails还对ruby原生的String类扩展了一些方法，具体代码可以看这里：
 
-https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/string/inflections.rb#L31
+[https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/string/inflections.rb#L31](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/string/inflections.rb#L31)
 
 下面是函数中的关键语句：
 
@@ -72,7 +72,7 @@ https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core
 
 `ActiveSupport`是一个module，`Inflector`也是一个module。下面便是`pluralize`方法的代码：
 
-https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/methods.rb#L31
+[https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/methods.rb#L31](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/methods.rb#L31)
 
 这个方法比较简单，将所有工作交给了`apply_inflections`方法。传入了有待转换复数的字符串`word`和语言对应的转换复数函数`inflections(locale).plurals`。
 
@@ -82,15 +82,15 @@ https://github.com/rails/rails/blob/master/activesupport/lib/active_support/infl
 
 如果可数名词则逐个检查传入的第二个参数的规则列表，实质是匹配名词的正则，有匹配的就进行相应的替换操作，将名字变为复数形式。这部分代码在这里：
 
-https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/methods.rb#L378
+[https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/methods.rb#L378](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/methods.rb#L378)
 
 # 神奇的替换规则
 
 这部分其实是实现名词变复数的关键所在，有一部分正则表示的规则和一个特例表组成：
 
-正则替换规则： https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflections.rb#L11
+正则替换规则： [https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflections.rb#L11](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflections.rb#L11)
 
-特例表：https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflections.rb#L61
+特例表：[https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflections.rb#L61](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflections.rb#L61)
 
 ## 规则列表
 
@@ -105,11 +105,11 @@ https://github.com/rails/rails/blob/master/activesupport/lib/active_support/infl
 
 这里的正则存放在一个block中，每次block获得一个`Inflector.inflections(:en)`用yield返回的`inflect`对象。利用这个block不断的将名词匹配规则和复数形式替换规则添加到规则列表中。这部分代码参见：
 
-https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/inflections.rb#L203
+[https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/inflections.rb#L203](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/inflections.rb#L203)
 
 而`inflect`对象是由`Inflections.instance(locale)`创建的，这部分代码参见：
 
-https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/inflections.rb#L30
+[https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/inflections.rb#L30](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/inflector/inflections.rb#L30)
 
 创建过程中有这样一句：
     
