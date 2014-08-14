@@ -63,3 +63,7 @@ tags: ruby rails
 ## 测试
 
 打开你的`rails server`，看看网页是否能正常工作吧！当然，可以跑一遍对于controller的单元测试是更加严谨的做法。
+
+# 原文链接（英文）
+
+[http://www.22ideastreet.com/blog/2011/10/19/converting-erb-to-slim/]
