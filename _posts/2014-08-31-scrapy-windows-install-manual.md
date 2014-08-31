@@ -32,7 +32,7 @@ C:\Python27;C:\Python27\Scripts;
 ### 测试环境变量是否配置成功
 
 * 打开一个命令行窗口（运行下输入cmd）
-* 输入python --version
+* 输入`python --version`
 * 若显示python版本号则环境变量设置正常；如果提示没有找到python这个命令之类的，则说明环境变量没有设置，或者路径设置错误，需要重新设置环境变量。
 * 环境变量配置成功后将命令行窗口*关闭*
 
@@ -42,13 +42,13 @@ C:\Python27;C:\Python27\Scripts;
 
 * 到[https://bootstrap.pypa.io/get-pip.py](https://bootstrap.pypa.io/get-pip.py)下载get-pip.py脚本
 * 打开一个命令行窗口并用cd命令切换到get-pip.py脚本所在的目录
-* 输入python get-pip.py开始安装pip
+* 输入`python get-pip.py`开始安装pip
 * 提示安装完毕后即可，关闭命令行窗口
 
 ### 测试pip安装是否成功
 
 * 打开一个命令行窗口
-* 输入pip --version
+* 输入`pip --version`
 * 如果看到pip版本信息，则安装成功
 * 关闭命令行窗口
 
