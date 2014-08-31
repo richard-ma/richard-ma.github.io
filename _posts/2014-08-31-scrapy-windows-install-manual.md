@@ -5,8 +5,6 @@ title: "scrapy windows install manual"
 tags: python scrapy
 ---
 
-# scrapy windows install manual
-
 # 系统需求
 
 * python 2.7
