@@ -43,8 +43,8 @@
 - name: 人立方读心机器人
   url: http://renlifang.msra.cn/Q20/index.aspx
 
--name: 讯飞语音输入法
+- name: 讯飞语音输入法
   url: http://ime.voicecloud.cn/pc.html
 
--name: 有趣网址之家
+- name: 有趣网址之家
   url: http://youquhome.com
