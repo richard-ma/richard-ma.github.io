@@ -1,4 +1,4 @@
-markdown: rdiscount
+markdown: kramdown
 hightlighter: pygments
 permalink: date
 
