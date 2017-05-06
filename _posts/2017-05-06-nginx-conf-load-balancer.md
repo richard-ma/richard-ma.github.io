@@ -95,3 +95,10 @@ server {
 }
 
 ```
+
+# 参考文献
+1. [http://nginx.org/en/docs/http/ngx_http_upstream_module.html](http://nginx.org/en/docs/http/ngx_http_upstream_module.html)
+1. [https://www.zybuluo.com/phper/note/89391](https://www.zybuluo.com/phper/note/89391)
+1. [https://www.zybuluo.com/phper/note/90310](https://www.zybuluo.com/phper/note/90310)
+1. [https://www.zybuluo.com/phper/note/133244](https://www.zybuluo.com/phper/note/133244)
+1. [http://www.php100.com/html/program/nginx/2013/0905/5525.html](http://www.php100.com/html/program/nginx/2013/0905/5525.html)
