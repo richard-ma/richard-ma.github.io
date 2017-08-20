@@ -34,7 +34,7 @@ class Solution(object):
         return countL == countR and countU == countD
 ```
 
-## 解法二: 利用Collection.Counter统计四种字符个数
+## 解法二: 利用collections.Counter统计四种字符个数
 
 ```
 def judgeCircle(self, moves):
