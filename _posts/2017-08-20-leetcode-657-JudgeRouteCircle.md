@@ -41,3 +41,16 @@ def judgeCircle(self, moves):
     c = collections.Counter(moves)
     return c['L'] == c['R'] and c['U'] == c['D']
 ```
+
+## 附录: collections
+
+* python的collections包是一个数据结构包,包含以下几种数据结构
+    * namedtuple() 带有名称的tuple
+    * deque 高效的双端队列
+    * ChainMap 字典形式的一对多map
+    * Counter 字典子类,用于统计可hash的对象个数
+    * OrderedDict 字典子类,记录插入顺序的字典
+    * defaultdict 字典子类,当value为空时调用特定的函数,将其结果作为默认值
+    * UserDict 将dict转换成为一个Object,可以为原有dict添加方法和修改方法
+    * UserList 将list转换成为一个Object,可以为原有list添加和修改方法
+    * UserString 将string转换为一个Object,可以为原有String添加和修改方法
