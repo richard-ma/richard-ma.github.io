@@ -35,3 +35,15 @@ class Solution(object):
 * [iter(flat)] * c是对迭代器的使用，如果flat是[1, 2, 3]而c是3的话，迭代器的指针分别指向1, 2, 3
 * zip(*([iter(flat)] * c)) *是任意多个参数传递给zip，参数为c个flat数组的迭代器，每次zip调用一次迭代器则会自动next一次，这样就实现了取c个元素的操作
 * map(list, truples) 是对truples的每个元素使用list函数变为一个lilst，符合题意
+
+## 解法二：
+```
+def matrixReshape(self, nums, r, c):
+    if r * c != len(nums) * len(nums[0]):
+        return nums
+    it = itertools.chain(*nums) # 将nums变为一维数组
+    return [list(itertools.islice(it, c)) for _ in xrange(r)] # 以c为单位进行划分
+```
+
+## note
+* 廖雪峰的blog： https://www.liaoxuefeng.com/
