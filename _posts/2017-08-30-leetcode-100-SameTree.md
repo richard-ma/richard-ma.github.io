@@ -1,11 +1,11 @@
 ---
 layout: post
 category: solution
-title: "leetcode 563 Binary Tree Tile"
+title: "leetcode 100 Same Tree"
 tags: leetcode
 ---
 
-# leetcode 563 Binary Tree Tile
+# leetcode 100 Same Tree
 
 * 判断两棵树是否完全相同
     * 结点值相同
