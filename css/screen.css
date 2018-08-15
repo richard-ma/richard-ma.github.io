@@ -81,7 +81,7 @@ ul.posts {
 .site {
   font-size: 110%;
   text-align: justify;
-  width: 40em;
+  width: 80em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
@@ -198,12 +198,13 @@ ul.posts {
 #document_info {
     background-color: #CCF;
     padding: 1em;
-    margin-bottom: 1em;
+    margin: 1em;
     border-radius: 5px;
 }
 
 #payment {
     background-color: #CCF;
     padding: 1em;
+    margin: 1em;
     border-radius: 5px;
 }
