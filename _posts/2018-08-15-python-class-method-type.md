@@ -93,3 +93,6 @@ if __name__ == '__main__':
     print(p.area()) # 计算instance的面积
     print(Pizza.circle_area(4)) # 类外部调用
 ```
+
+## 参考文献
+* [https://realpython.com/instance-class-and-static-methods-demystified/](https://realpython.com/instance-class-and-static-methods-demystified/)
