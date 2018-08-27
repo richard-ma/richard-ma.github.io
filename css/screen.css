@@ -20,11 +20,10 @@ body {
   font: 20px helvetica, arial, clean, sans-serif;
   *font-size: large;
   text-align: center;
-  width: 80%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /*font-size: 100%;*/
+  font-size: 100%;
   padding-bottom: 0.5em;
   border-bottom: 2px dashed #eef;
   margin-top: 1em;
