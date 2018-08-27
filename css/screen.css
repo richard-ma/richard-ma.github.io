@@ -20,6 +20,7 @@ body {
   font: 20px helvetica, arial, clean, sans-serif;
   *font-size: large;
   text-align: center;
+  width: 80%;
 }
 
 h1, h2, h3, h4, h5, h6 {
