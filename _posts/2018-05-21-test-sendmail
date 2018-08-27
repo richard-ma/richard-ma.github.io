@@ -1,0 +1,20 @@
+# 测试sendmail
+
+## 测试是否安装了sendmail
+* `which sendmail`
+
+## 安装sendmail
+* `yum insntall sendmail`
+
+## 开启sendmail服务
+* `serivce sendmail start`
+
+## 测试sendmail发送邮件
+* `echo 'mail content' | sendmail -s 'mail subject' user@test.com`
+* `sendmail -s 'mail subject' user@test.com < mail_content.txt`
+
+## 使用smtp服务
+* 可通过配置/etc/mail.rc来配置smtp服务器，所有发送邮件将都通过这个服务器发送
+
+## 参考文献
+* [http://www.cnblogs.com/hanganglin/p/6510216.html](http://www.cnblogs.com/hanganglin/p/6510216.html) 
